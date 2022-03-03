@@ -1,1 +1,0 @@
-INFO     logging:test_regist.py:47 测试编号12,测试用例标题:用户名已注册,执行成功!

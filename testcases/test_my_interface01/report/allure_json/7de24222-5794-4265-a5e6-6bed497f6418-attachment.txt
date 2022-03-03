@@ -1,1 +1,0 @@
-INFO     logging:test_login.py:54 测试编号1,测试用例标题:登录成功,执行成功！

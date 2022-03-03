@@ -1,1 +1,0 @@
-INFO     logging:test_login.py:54 测试编号3,测试用例标题:用户名为空,执行成功！

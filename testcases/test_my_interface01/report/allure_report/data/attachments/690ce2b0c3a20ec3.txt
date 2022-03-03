@@ -1,1 +1,0 @@
-INFO     logging:test_regist.py:48 测试编号9,测试用例标题:用户名不在6-18之间,执行成功!
