@@ -1,0 +1,103 @@
+{
+  "uid" : "da095ec2775b47a5",
+  "name" : "密码和确认密码输入不一致",
+  "fullName" : "testcases.test_my_interface01.test_regist.TestRegister#test_register",
+  "historyId" : "6ab3c839cdc577ecbe10f16022807b67",
+  "time" : {
+    "start" : 1646290823066,
+    "stop" : 1646290823144,
+    "duration" : 78
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "6b2052be79cce710",
+      "name" : "接口路径",
+      "source" : "6b2052be79cce710.attach",
+      "type" : "text/plain",
+      "size" : 30
+    }, {
+      "uid" : "2f016ae7f67c0d4f",
+      "name" : "请求参数",
+      "source" : "2f016ae7f67c0d4f.attach",
+      "type" : "text/plain",
+      "size" : 114
+    }, {
+      "uid" : "f8850af531be7d2f",
+      "name" : "响应结果",
+      "source" : "f8850af531be7d2f.attach",
+      "type" : "text/plain",
+      "size" : 52
+    }, {
+      "uid" : "cfb77fd8e30942fa",
+      "name" : "log",
+      "source" : "cfb77fd8e30942fa.txt",
+      "type" : "text/plain",
+      "size" : 118
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "注册接口测试"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcases.test_my_interface01"
+  }, {
+    "name" : "suite",
+    "value" : "test_regist"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestRegister"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-V37VTV5"
+  }, {
+    "name" : "thread",
+    "value" : "112356-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcases.test_my_interface01.test_regist"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "<comms.excel_utils.CaseData object at 0x040AA5F8>"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "da095ec2775b47a5.json",
+  "parameterValues" : [ "<comms.excel_utils.CaseData object at 0x040AA5F8>" ]
+}

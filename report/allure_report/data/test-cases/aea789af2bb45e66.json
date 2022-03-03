@@ -1,0 +1,111 @@
+{
+  "uid" : "aea789af2bb45e66",
+  "name" : "手机号码格式不正确",
+  "fullName" : "testcases.test_my_interface01.test_regist.TestRegister#test_register",
+  "historyId" : "b836348ba6fc250f5e8afac80c1c6dff",
+  "time" : {
+    "start" : 1646290823147,
+    "stop" : 1646290823231,
+    "duration" : 84
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert {'code': 1007...: '手机号码格式不正确'} == {'code': 1009...sg': '用户名已存在'}\n  Differing items:\n  {'code': 1007} != {'code': 1009}\n  {'msg': '手机号码格式不正确'} != {'msg': '用户名已存在'}\n  Full diff:\n  - {'code': 1009, 'msg': '用户名已存在'}\n  + {'code': 1007, 'msg': '手机号码格式不正确'}",
+  "statusTrace" : "self = <autotest03.testcases.test_my_interface01.test_regist.TestRegister object at 0x04078E20>\ncase = <comms.excel_utils.CaseData object at 0x040AA598>\n\n    @allure.severity(\"critical\")\n    @pytest.mark.parametrize(\"case\", cases)\n    def test_register(self, case):\n        allure.dynamic.title(case.case_title)\n        allure.attach(body=case.url, name='接口路径')\n        allure.attach(body=case.case_data, name='请求参数')\n    \n        db = DBUtils()\n        # 正确流程\n        if case.case_id == 1:\n            username = eval(case.case_data)['username']  # 获取传入的用户名\n            db.cud('delete from tb_user where name = %s', (username,))\n            db.close()\n    \n        response = requests.post(url=case.url, data=eval(case.case_data))\n        res_body = response.json()\n        allure.attach(body=str(res_body), name='响应结果')\n    \n        try:\n            assert eval(case.expect) == res_body\n        except AssertionError as e:\n            ReadExcel.write_data(DATA_FILE, 'Register', case.case_id, 7, '失败')\n            logger.error('测试编号{},测试用例标题:{},执行失败,实际结果为:{}!'.format(case.case_id, case.case_title, res_body))\n            logger.exception(e)\n>           raise e\n\ntestcases\\test_my_interface01\\test_regist.py:48: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <autotest03.testcases.test_my_interface01.test_regist.TestRegister object at 0x04078E20>\ncase = <comms.excel_utils.CaseData object at 0x040AA598>\n\n    @allure.severity(\"critical\")\n    @pytest.mark.parametrize(\"case\", cases)\n    def test_register(self, case):\n        allure.dynamic.title(case.case_title)\n        allure.attach(body=case.url, name='接口路径')\n        allure.attach(body=case.case_data, name='请求参数')\n    \n        db = DBUtils()\n        # 正确流程\n        if case.case_id == 1:\n            username = eval(case.case_data)['username']  # 获取传入的用户名\n            db.cud('delete from tb_user where name = %s', (username,))\n            db.close()\n    \n        response = requests.post(url=case.url, data=eval(case.case_data))\n        res_body = response.json()\n        allure.attach(body=str(res_body), name='响应结果')\n    \n        try:\n>           assert eval(case.expect) == res_body\nE           AssertionError: assert {'code': 1007...: '手机号码格式不正确'} == {'code': 1009...sg': '用户名已存在'}\nE             Differing items:\nE             {'code': 1007} != {'code': 1009}\nE             {'msg': '手机号码格式不正确'} != {'msg': '用户名已存在'}\nE             Full diff:\nE             - {'code': 1009, 'msg': '用户名已存在'}\nE             + {'code': 1007, 'msg': '手机号码格式不正确'}\n\ntestcases\\test_my_interface01\\test_regist.py:43: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert {'code': 1007...: '手机号码格式不正确'} == {'code': 1009...sg': '用户名已存在'}\n  Differing items:\n  {'code': 1007} != {'code': 1009}\n  {'msg': '手机号码格式不正确'} != {'msg': '用户名已存在'}\n  Full diff:\n  - {'code': 1009, 'msg': '用户名已存在'}\n  + {'code': 1007, 'msg': '手机号码格式不正确'}",
+    "statusTrace" : "self = <autotest03.testcases.test_my_interface01.test_regist.TestRegister object at 0x04078E20>\ncase = <comms.excel_utils.CaseData object at 0x040AA598>\n\n    @allure.severity(\"critical\")\n    @pytest.mark.parametrize(\"case\", cases)\n    def test_register(self, case):\n        allure.dynamic.title(case.case_title)\n        allure.attach(body=case.url, name='接口路径')\n        allure.attach(body=case.case_data, name='请求参数')\n    \n        db = DBUtils()\n        # 正确流程\n        if case.case_id == 1:\n            username = eval(case.case_data)['username']  # 获取传入的用户名\n            db.cud('delete from tb_user where name = %s', (username,))\n            db.close()\n    \n        response = requests.post(url=case.url, data=eval(case.case_data))\n        res_body = response.json()\n        allure.attach(body=str(res_body), name='响应结果')\n    \n        try:\n            assert eval(case.expect) == res_body\n        except AssertionError as e:\n            ReadExcel.write_data(DATA_FILE, 'Register', case.case_id, 7, '失败')\n            logger.error('测试编号{},测试用例标题:{},执行失败,实际结果为:{}!'.format(case.case_id, case.case_title, res_body))\n            logger.exception(e)\n>           raise e\n\ntestcases\\test_my_interface01\\test_regist.py:48: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <autotest03.testcases.test_my_interface01.test_regist.TestRegister object at 0x04078E20>\ncase = <comms.excel_utils.CaseData object at 0x040AA598>\n\n    @allure.severity(\"critical\")\n    @pytest.mark.parametrize(\"case\", cases)\n    def test_register(self, case):\n        allure.dynamic.title(case.case_title)\n        allure.attach(body=case.url, name='接口路径')\n        allure.attach(body=case.case_data, name='请求参数')\n    \n        db = DBUtils()\n        # 正确流程\n        if case.case_id == 1:\n            username = eval(case.case_data)['username']  # 获取传入的用户名\n            db.cud('delete from tb_user where name = %s', (username,))\n            db.close()\n    \n        response = requests.post(url=case.url, data=eval(case.case_data))\n        res_body = response.json()\n        allure.attach(body=str(res_body), name='响应结果')\n    \n        try:\n>           assert eval(case.expect) == res_body\nE           AssertionError: assert {'code': 1007...: '手机号码格式不正确'} == {'code': 1009...sg': '用户名已存在'}\nE             Differing items:\nE             {'code': 1007} != {'code': 1009}\nE             {'msg': '手机号码格式不正确'} != {'msg': '用户名已存在'}\nE             Full diff:\nE             - {'code': 1009, 'msg': '用户名已存在'}\nE             + {'code': 1007, 'msg': '手机号码格式不正确'}\n\ntestcases\\test_my_interface01\\test_regist.py:43: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "8d6a465b692e59dd",
+      "name" : "接口路径",
+      "source" : "8d6a465b692e59dd.attach",
+      "type" : "text/plain",
+      "size" : 30
+    }, {
+      "uid" : "2ca664f39bc6b1bd",
+      "name" : "请求参数",
+      "source" : "2ca664f39bc6b1bd.attach",
+      "type" : "text/plain",
+      "size" : 112
+    }, {
+      "uid" : "6214ebe2abc43410",
+      "name" : "响应结果",
+      "source" : "6214ebe2abc43410.attach",
+      "type" : "text/plain",
+      "size" : 43
+    }, {
+      "uid" : "8723cafd39eeaf34",
+      "name" : "log",
+      "source" : "8723cafd39eeaf34.txt",
+      "type" : "text/plain",
+      "size" : 1123
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "注册接口测试"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcases.test_my_interface01"
+  }, {
+    "name" : "suite",
+    "value" : "test_regist"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestRegister"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-V37VTV5"
+  }, {
+    "name" : "thread",
+    "value" : "112356-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcases.test_my_interface01.test_regist"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "<comms.excel_utils.CaseData object at 0x040AA598>"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "aea789af2bb45e66.json",
+  "parameterValues" : [ "<comms.excel_utils.CaseData object at 0x040AA598>" ]
+}
