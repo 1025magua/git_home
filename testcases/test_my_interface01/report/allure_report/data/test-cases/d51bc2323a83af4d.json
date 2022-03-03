@@ -1,0 +1,77 @@
+{
+  "uid" : "d51bc2323a83af4d",
+  "name" : "用户名不在6-18之间",
+  "fullName" : "test_regist.TestRegister#test_register",
+  "historyId" : "be62e6194c4a3f5dd4fc28aa5976a6fd",
+  "time" : {
+    "start" : 1646037765757,
+    "stop" : 1646037765834,
+    "duration" : 77
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "96892336cccd145",
+      "name" : "log",
+      "source" : "96892336cccd145.txt",
+      "type" : "text/plain",
+      "size" : 107
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "注册接口测试"
+  }, {
+    "name" : "suite",
+    "value" : "test_regist"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestRegister"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-V37VTV5"
+  }, {
+    "name" : "thread",
+    "value" : "64192-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_regist"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "<comms.excel_utils.CaseData object at 0x04B9FA78>"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d51bc2323a83af4d.json",
+  "parameterValues" : [ "<comms.excel_utils.CaseData object at 0x04B9FA78>" ]
+}

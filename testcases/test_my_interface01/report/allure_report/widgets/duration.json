@@ -1,0 +1,171 @@
+[ {
+  "uid" : "eb2ae3e31de76d48",
+  "name" : "用户名为空",
+  "time" : {
+    "start" : 1646039965279,
+    "stop" : 1646039965359,
+    "duration" : 80
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "55fbc956c58dcef4",
+  "name" : "密码为空",
+  "time" : {
+    "start" : 1646039965111,
+    "stop" : 1646039965188,
+    "duration" : 77
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "8375810a50255564",
+  "name" : "用户名已注册",
+  "time" : {
+    "start" : 1646039966275,
+    "stop" : 1646039966359,
+    "duration" : 84
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "aae6faefff202ccb",
+  "name" : "密码为空",
+  "time" : {
+    "start" : 1646039965362,
+    "stop" : 1646039965447,
+    "duration" : 85
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "881126d4c8acd392",
+  "name" : "用户名不在6-18之间",
+  "time" : {
+    "start" : 1646039966011,
+    "stop" : 1646039966092,
+    "duration" : 81
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "49782ca30198fcec",
+  "name" : "密码错误",
+  "time" : {
+    "start" : 1646039965025,
+    "stop" : 1646039965108,
+    "duration" : 83
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "cb6435e8b5e03549",
+  "name" : "用户名错误",
+  "time" : {
+    "start" : 1646039964860,
+    "stop" : 1646039964942,
+    "duration" : 82
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "500c55c79696e81f",
+  "name" : "手机号码为空",
+  "time" : {
+    "start" : 1646039965727,
+    "stop" : 1646039965810,
+    "duration" : 83
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "20b244adb9ab392c",
+  "name" : "确认密码为空",
+  "time" : {
+    "start" : 1646039965450,
+    "stop" : 1646039965530,
+    "duration" : 80
+  },
+  "status" : "failed",
+  "severity" : "critical"
+}, {
+  "uid" : "91d7219282356e52",
+  "name" : "用户名为空",
+  "time" : {
+    "start" : 1646039964944,
+    "stop" : 1646039965023,
+    "duration" : 79
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "b35b6398b4310529",
+  "name" : "正常注册",
+  "time" : {
+    "start" : 1646039965190,
+    "stop" : 1646039965276,
+    "duration" : 86
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "a92e600a96c5a758",
+  "name" : "邮箱为空",
+  "time" : {
+    "start" : 1646039965641,
+    "stop" : 1646039965724,
+    "duration" : 83
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "a63dc77b8bce938b",
+  "name" : "登录成功",
+  "time" : {
+    "start" : 1646039964765,
+    "stop" : 1646039964857,
+    "duration" : 92
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "decf86a123399666",
+  "name" : "手机号码格式不正确",
+  "time" : {
+    "start" : 1646039965920,
+    "stop" : 1646039966005,
+    "duration" : 85
+  },
+  "status" : "failed",
+  "severity" : "critical"
+}, {
+  "uid" : "8e5acafcf01ce9e3",
+  "name" : "密码和确认密码输入不一致",
+  "time" : {
+    "start" : 1646039965813,
+    "stop" : 1646039965918,
+    "duration" : 105
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "218721a2fde1a211",
+  "name" : "密码不在6-18位之间",
+  "time" : {
+    "start" : 1646039966096,
+    "stop" : 1646039966177,
+    "duration" : 81
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "3465ca5a4e19a406",
+  "name" : "邮箱格式不正确",
+  "time" : {
+    "start" : 1646039966179,
+    "stop" : 1646039966267,
+    "duration" : 88
+  },
+  "status" : "failed",
+  "severity" : "critical"
+} ]

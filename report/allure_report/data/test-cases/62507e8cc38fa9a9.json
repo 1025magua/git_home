@@ -1,0 +1,111 @@
+{
+  "uid" : "62507e8cc38fa9a9",
+  "name" : "确认密码为空",
+  "fullName" : "testcases.test_my_interface01.test_regist.TestRegister#test_register",
+  "historyId" : "e1b35d3b7b0d44f05eb342d9272bd30e",
+  "time" : {
+    "start" : 1646290822806,
+    "stop" : 1646290822891,
+    "duration" : 85
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert {'code': 1003...': '确认密码不能为空'} == {'code': 1004...: '两次密码输入不一致'}\n  Differing items:\n  {'code': 1003} != {'code': 1004}\n  {'msg': '确认密码不能为空'} != {'msg': '两次密码输入不一致'}\n  Full diff:\n  - {'code': 1004, 'msg': '两次密码输入不一致'}\n  ?             ^          ^^  -- ^^\n  + {'code': 1003, 'msg': '确认密码不能为空'}...\n  \n  ...Full output truncated (2 lines hidden), use '-vv' to show",
+  "statusTrace" : "self = <autotest03.testcases.test_my_interface01.test_regist.TestRegister object at 0x047B3670>\ncase = <comms.excel_utils.CaseData object at 0x040AA670>\n\n    @allure.severity(\"critical\")\n    @pytest.mark.parametrize(\"case\", cases)\n    def test_register(self, case):\n        allure.dynamic.title(case.case_title)\n        allure.attach(body=case.url, name='接口路径')\n        allure.attach(body=case.case_data, name='请求参数')\n    \n        db = DBUtils()\n        # 正确流程\n        if case.case_id == 1:\n            username = eval(case.case_data)['username']  # 获取传入的用户名\n            db.cud('delete from tb_user where name = %s', (username,))\n            db.close()\n    \n        response = requests.post(url=case.url, data=eval(case.case_data))\n        res_body = response.json()\n        allure.attach(body=str(res_body), name='响应结果')\n    \n        try:\n            assert eval(case.expect) == res_body\n        except AssertionError as e:\n            ReadExcel.write_data(DATA_FILE, 'Register', case.case_id, 7, '失败')\n            logger.error('测试编号{},测试用例标题:{},执行失败,实际结果为:{}!'.format(case.case_id, case.case_title, res_body))\n            logger.exception(e)\n>           raise e\n\ntestcases\\test_my_interface01\\test_regist.py:48: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <autotest03.testcases.test_my_interface01.test_regist.TestRegister object at 0x047B3670>\ncase = <comms.excel_utils.CaseData object at 0x040AA670>\n\n    @allure.severity(\"critical\")\n    @pytest.mark.parametrize(\"case\", cases)\n    def test_register(self, case):\n        allure.dynamic.title(case.case_title)\n        allure.attach(body=case.url, name='接口路径')\n        allure.attach(body=case.case_data, name='请求参数')\n    \n        db = DBUtils()\n        # 正确流程\n        if case.case_id == 1:\n            username = eval(case.case_data)['username']  # 获取传入的用户名\n            db.cud('delete from tb_user where name = %s', (username,))\n            db.close()\n    \n        response = requests.post(url=case.url, data=eval(case.case_data))\n        res_body = response.json()\n        allure.attach(body=str(res_body), name='响应结果')\n    \n        try:\n>           assert eval(case.expect) == res_body\nE           AssertionError: assert {'code': 1003...': '确认密码不能为空'} == {'code': 1004...: '两次密码输入不一致'}\nE             Differing items:\nE             {'code': 1003} != {'code': 1004}\nE             {'msg': '确认密码不能为空'} != {'msg': '两次密码输入不一致'}\nE             Full diff:\nE             - {'code': 1004, 'msg': '两次密码输入不一致'}\nE             ?             ^          ^^  -- ^^\nE             + {'code': 1003, 'msg': '确认密码不能为空'}...\nE             \nE             ...Full output truncated (2 lines hidden), use '-vv' to show\n\ntestcases\\test_my_interface01\\test_regist.py:43: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert {'code': 1003...': '确认密码不能为空'} == {'code': 1004...: '两次密码输入不一致'}\n  Differing items:\n  {'code': 1003} != {'code': 1004}\n  {'msg': '确认密码不能为空'} != {'msg': '两次密码输入不一致'}\n  Full diff:\n  - {'code': 1004, 'msg': '两次密码输入不一致'}\n  ?             ^          ^^  -- ^^\n  + {'code': 1003, 'msg': '确认密码不能为空'}...\n  \n  ...Full output truncated (2 lines hidden), use '-vv' to show",
+    "statusTrace" : "self = <autotest03.testcases.test_my_interface01.test_regist.TestRegister object at 0x047B3670>\ncase = <comms.excel_utils.CaseData object at 0x040AA670>\n\n    @allure.severity(\"critical\")\n    @pytest.mark.parametrize(\"case\", cases)\n    def test_register(self, case):\n        allure.dynamic.title(case.case_title)\n        allure.attach(body=case.url, name='接口路径')\n        allure.attach(body=case.case_data, name='请求参数')\n    \n        db = DBUtils()\n        # 正确流程\n        if case.case_id == 1:\n            username = eval(case.case_data)['username']  # 获取传入的用户名\n            db.cud('delete from tb_user where name = %s', (username,))\n            db.close()\n    \n        response = requests.post(url=case.url, data=eval(case.case_data))\n        res_body = response.json()\n        allure.attach(body=str(res_body), name='响应结果')\n    \n        try:\n            assert eval(case.expect) == res_body\n        except AssertionError as e:\n            ReadExcel.write_data(DATA_FILE, 'Register', case.case_id, 7, '失败')\n            logger.error('测试编号{},测试用例标题:{},执行失败,实际结果为:{}!'.format(case.case_id, case.case_title, res_body))\n            logger.exception(e)\n>           raise e\n\ntestcases\\test_my_interface01\\test_regist.py:48: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <autotest03.testcases.test_my_interface01.test_regist.TestRegister object at 0x047B3670>\ncase = <comms.excel_utils.CaseData object at 0x040AA670>\n\n    @allure.severity(\"critical\")\n    @pytest.mark.parametrize(\"case\", cases)\n    def test_register(self, case):\n        allure.dynamic.title(case.case_title)\n        allure.attach(body=case.url, name='接口路径')\n        allure.attach(body=case.case_data, name='请求参数')\n    \n        db = DBUtils()\n        # 正确流程\n        if case.case_id == 1:\n            username = eval(case.case_data)['username']  # 获取传入的用户名\n            db.cud('delete from tb_user where name = %s', (username,))\n            db.close()\n    \n        response = requests.post(url=case.url, data=eval(case.case_data))\n        res_body = response.json()\n        allure.attach(body=str(res_body), name='响应结果')\n    \n        try:\n>           assert eval(case.expect) == res_body\nE           AssertionError: assert {'code': 1003...': '确认密码不能为空'} == {'code': 1004...: '两次密码输入不一致'}\nE             Differing items:\nE             {'code': 1003} != {'code': 1004}\nE             {'msg': '确认密码不能为空'} != {'msg': '两次密码输入不一致'}\nE             Full diff:\nE             - {'code': 1004, 'msg': '两次密码输入不一致'}\nE             ?             ^          ^^  -- ^^\nE             + {'code': 1003, 'msg': '确认密码不能为空'}...\nE             \nE             ...Full output truncated (2 lines hidden), use '-vv' to show\n\ntestcases\\test_my_interface01\\test_regist.py:43: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "82e75ca466863b59",
+      "name" : "接口路径",
+      "source" : "82e75ca466863b59.attach",
+      "type" : "text/plain",
+      "size" : 30
+    }, {
+      "uid" : "fc53a71133ed4570",
+      "name" : "请求参数",
+      "source" : "fc53a71133ed4570.attach",
+      "type" : "text/plain",
+      "size" : 105
+    }, {
+      "uid" : "b8389c14121b2baa",
+      "name" : "响应结果",
+      "source" : "b8389c14121b2baa.attach",
+      "type" : "text/plain",
+      "size" : 52
+    }, {
+      "uid" : "34c90faee88003db",
+      "name" : "log",
+      "source" : "34c90faee88003db.txt",
+      "type" : "text/plain",
+      "size" : 1367
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "注册接口测试"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcases.test_my_interface01"
+  }, {
+    "name" : "suite",
+    "value" : "test_regist"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestRegister"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-V37VTV5"
+  }, {
+    "name" : "thread",
+    "value" : "112356-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcases.test_my_interface01.test_regist"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "<comms.excel_utils.CaseData object at 0x040AA670>"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "62507e8cc38fa9a9.json",
+  "parameterValues" : [ "<comms.excel_utils.CaseData object at 0x040AA670>" ]
+}

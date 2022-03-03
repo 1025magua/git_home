@@ -1,0 +1,1 @@
+INFO     logging:test_regist.py:48 测试编号1,测试用例标题:正常注册,执行成功!

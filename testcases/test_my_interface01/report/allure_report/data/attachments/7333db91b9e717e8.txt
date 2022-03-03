@@ -1,0 +1,1 @@
+INFO     logging:test_regist.py:48 测试编号6,测试用例标题:手机号码为空,执行成功!

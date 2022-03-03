@@ -1,0 +1,1 @@
+INFO     logging:test_regist.py:48 测试编号3,测试用例标题:密码为空,执行成功!

@@ -1,0 +1,1 @@
+INFO     logging:test_login.py:50 测试编号2,测试用例标题:用户名错误,执行成功！

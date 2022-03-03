@@ -1,0 +1,310 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "test_login",
+    "children" : [ {
+      "name" : "TestLogin",
+      "children" : [ {
+        "name" : "登录成功",
+        "uid" : "a63dc77b8bce938b",
+        "parentUid" : "e75455cf76bd95e9050e793836e5ab99",
+        "status" : "passed",
+        "time" : {
+          "start" : 1646039964765,
+          "stop" : 1646039964857,
+          "duration" : 92
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 13,
+        "retriesStatusChange" : true,
+        "parameters" : [ "<comms.excel_utils.CaseData object at 0x04C73FB8>" ]
+      }, {
+        "name" : "用户名错误",
+        "uid" : "cb6435e8b5e03549",
+        "parentUid" : "e75455cf76bd95e9050e793836e5ab99",
+        "status" : "passed",
+        "time" : {
+          "start" : 1646039964860,
+          "stop" : 1646039964942,
+          "duration" : 82
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 13,
+        "retriesStatusChange" : true,
+        "parameters" : [ "<comms.excel_utils.CaseData object at 0x0458E100>" ]
+      }, {
+        "name" : "用户名为空",
+        "uid" : "91d7219282356e52",
+        "parentUid" : "e75455cf76bd95e9050e793836e5ab99",
+        "status" : "passed",
+        "time" : {
+          "start" : 1646039964944,
+          "stop" : 1646039965023,
+          "duration" : 79
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 13,
+        "retriesStatusChange" : true,
+        "parameters" : [ "<comms.excel_utils.CaseData object at 0x0458E118>" ]
+      }, {
+        "name" : "密码错误",
+        "uid" : "49782ca30198fcec",
+        "parentUid" : "e75455cf76bd95e9050e793836e5ab99",
+        "status" : "passed",
+        "time" : {
+          "start" : 1646039965025,
+          "stop" : 1646039965108,
+          "duration" : 83
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 13,
+        "retriesStatusChange" : true,
+        "parameters" : [ "<comms.excel_utils.CaseData object at 0x04C47610>" ]
+      }, {
+        "name" : "密码为空",
+        "uid" : "55fbc956c58dcef4",
+        "parentUid" : "e75455cf76bd95e9050e793836e5ab99",
+        "status" : "passed",
+        "time" : {
+          "start" : 1646039965111,
+          "stop" : 1646039965188,
+          "duration" : 77
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 13,
+        "retriesStatusChange" : true,
+        "parameters" : [ "<comms.excel_utils.CaseData object at 0x04C47688>" ]
+      } ],
+      "uid" : "e75455cf76bd95e9050e793836e5ab99"
+    } ],
+    "uid" : "7db21133bf389fa43eef71e3fe0b0e68"
+  }, {
+    "name" : "test_regist",
+    "children" : [ {
+      "name" : "TestRegister",
+      "children" : [ {
+        "name" : "正常注册",
+        "uid" : "b35b6398b4310529",
+        "parentUid" : "56036a8d75eb7cce3c9bfaf8d5cefe32",
+        "status" : "passed",
+        "time" : {
+          "start" : 1646039965190,
+          "stop" : 1646039965276,
+          "duration" : 86
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 13,
+        "retriesStatusChange" : false,
+        "parameters" : [ "<comms.excel_utils.CaseData object at 0x04CCCAF0>" ]
+      }, {
+        "name" : "用户名为空",
+        "uid" : "eb2ae3e31de76d48",
+        "parentUid" : "56036a8d75eb7cce3c9bfaf8d5cefe32",
+        "status" : "passed",
+        "time" : {
+          "start" : 1646039965279,
+          "stop" : 1646039965359,
+          "duration" : 80
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 13,
+        "retriesStatusChange" : false,
+        "parameters" : [ "<comms.excel_utils.CaseData object at 0x04CCCDF0>" ]
+      }, {
+        "name" : "密码为空",
+        "uid" : "aae6faefff202ccb",
+        "parentUid" : "56036a8d75eb7cce3c9bfaf8d5cefe32",
+        "status" : "passed",
+        "time" : {
+          "start" : 1646039965362,
+          "stop" : 1646039965447,
+          "duration" : 85
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 13,
+        "retriesStatusChange" : false,
+        "parameters" : [ "<comms.excel_utils.CaseData object at 0x04CCC628>" ]
+      }, {
+        "name" : "确认密码为空",
+        "uid" : "20b244adb9ab392c",
+        "parentUid" : "56036a8d75eb7cce3c9bfaf8d5cefe32",
+        "status" : "failed",
+        "time" : {
+          "start" : 1646039965450,
+          "stop" : 1646039965530,
+          "duration" : 80
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 13,
+        "retriesStatusChange" : false,
+        "parameters" : [ "<comms.excel_utils.CaseData object at 0x041029A0>" ]
+      }, {
+        "name" : "邮箱为空",
+        "uid" : "a92e600a96c5a758",
+        "parentUid" : "56036a8d75eb7cce3c9bfaf8d5cefe32",
+        "status" : "passed",
+        "time" : {
+          "start" : 1646039965641,
+          "stop" : 1646039965724,
+          "duration" : 83
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 13,
+        "retriesStatusChange" : false,
+        "parameters" : [ "<comms.excel_utils.CaseData object at 0x04102BE0>" ]
+      }, {
+        "name" : "手机号码为空",
+        "uid" : "500c55c79696e81f",
+        "parentUid" : "56036a8d75eb7cce3c9bfaf8d5cefe32",
+        "status" : "passed",
+        "time" : {
+          "start" : 1646039965727,
+          "stop" : 1646039965810,
+          "duration" : 83
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 13,
+        "retriesStatusChange" : false,
+        "parameters" : [ "<comms.excel_utils.CaseData object at 0x04102C58>" ]
+      }, {
+        "name" : "密码和确认密码输入不一致",
+        "uid" : "8e5acafcf01ce9e3",
+        "parentUid" : "56036a8d75eb7cce3c9bfaf8d5cefe32",
+        "status" : "passed",
+        "time" : {
+          "start" : 1646039965813,
+          "stop" : 1646039965918,
+          "duration" : 105
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 13,
+        "retriesStatusChange" : false,
+        "parameters" : [ "<comms.excel_utils.CaseData object at 0x04102B20>" ]
+      }, {
+        "name" : "手机号码格式不正确",
+        "uid" : "decf86a123399666",
+        "parentUid" : "56036a8d75eb7cce3c9bfaf8d5cefe32",
+        "status" : "failed",
+        "time" : {
+          "start" : 1646039965920,
+          "stop" : 1646039966005,
+          "duration" : 85
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 13,
+        "retriesStatusChange" : false,
+        "parameters" : [ "<comms.excel_utils.CaseData object at 0x04D07670>" ]
+      }, {
+        "name" : "用户名不在6-18之间",
+        "uid" : "881126d4c8acd392",
+        "parentUid" : "56036a8d75eb7cce3c9bfaf8d5cefe32",
+        "status" : "passed",
+        "time" : {
+          "start" : 1646039966011,
+          "stop" : 1646039966092,
+          "duration" : 81
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 13,
+        "retriesStatusChange" : false,
+        "parameters" : [ "<comms.excel_utils.CaseData object at 0x04D07640>" ]
+      }, {
+        "name" : "密码不在6-18位之间",
+        "uid" : "218721a2fde1a211",
+        "parentUid" : "56036a8d75eb7cce3c9bfaf8d5cefe32",
+        "status" : "passed",
+        "time" : {
+          "start" : 1646039966096,
+          "stop" : 1646039966177,
+          "duration" : 81
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 13,
+        "retriesStatusChange" : false,
+        "parameters" : [ "<comms.excel_utils.CaseData object at 0x04D07328>" ]
+      }, {
+        "name" : "邮箱格式不正确",
+        "uid" : "3465ca5a4e19a406",
+        "parentUid" : "56036a8d75eb7cce3c9bfaf8d5cefe32",
+        "status" : "failed",
+        "time" : {
+          "start" : 1646039966179,
+          "stop" : 1646039966267,
+          "duration" : 88
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 13,
+        "retriesStatusChange" : false,
+        "parameters" : [ "<comms.excel_utils.CaseData object at 0x04D07388>" ]
+      }, {
+        "name" : "用户名已注册",
+        "uid" : "8375810a50255564",
+        "parentUid" : "56036a8d75eb7cce3c9bfaf8d5cefe32",
+        "status" : "passed",
+        "time" : {
+          "start" : 1646039966275,
+          "stop" : 1646039966359,
+          "duration" : 84
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 13,
+        "retriesStatusChange" : false,
+        "parameters" : [ "<comms.excel_utils.CaseData object at 0x04D075E0>" ]
+      } ],
+      "uid" : "56036a8d75eb7cce3c9bfaf8d5cefe32"
+    } ],
+    "uid" : "1d0bcc8853465dd047ef1d6e1598213f"
+  } ]
+}

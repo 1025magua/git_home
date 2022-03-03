@@ -1,0 +1,204 @@
+{
+  "uid" : "a92e600a96c5a758",
+  "name" : "邮箱为空",
+  "fullName" : "test_regist.TestRegister#test_register",
+  "historyId" : "e3dc196a297c8e3992561d9631737e64",
+  "time" : {
+    "start" : 1646039965641,
+    "stop" : 1646039965724,
+    "duration" : 83
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 13,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "b8e621f95ea8ff79",
+      "name" : "接口路径",
+      "source" : "b8e621f95ea8ff79.attach",
+      "type" : "text/plain",
+      "size" : 30
+    }, {
+      "uid" : "44765da0e6ad0bc3",
+      "name" : "请求参数",
+      "source" : "44765da0e6ad0bc3.attach",
+      "type" : "text/plain",
+      "size" : 101
+    }, {
+      "uid" : "9125320847ec983f",
+      "name" : "响应结果",
+      "source" : "9125320847ec983f.attach",
+      "type" : "text/plain",
+      "size" : 43
+    }, {
+      "uid" : "de48a49322ccbd0e",
+      "name" : "log",
+      "source" : "de48a49322ccbd0e.txt",
+      "type" : "text/plain",
+      "size" : 94
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "注册接口测试"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "suite",
+    "value" : "test_regist"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestRegister"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-V37VTV5"
+  }, {
+    "name" : "thread",
+    "value" : "67084-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_regist"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "<comms.excel_utils.CaseData object at 0x04102BE0>"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ {
+      "uid" : "5c9fd9b80ffa4f93",
+      "status" : "passed",
+      "time" : {
+        "start" : 1646039782517,
+        "stop" : 1646039782600,
+        "duration" : 83
+      }
+    }, {
+      "uid" : "1e1a13d91b920ebf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1646039634697,
+        "stop" : 1646039634777,
+        "duration" : 80
+      }
+    }, {
+      "uid" : "2cc7d99c0a79a2c0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1646039383615,
+        "stop" : 1646039383694,
+        "duration" : 79
+      }
+    }, {
+      "uid" : "c435aa824767c2d7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1646039328708,
+        "stop" : 1646039328792,
+        "duration" : 84
+      }
+    }, {
+      "uid" : "9ba0243273673510",
+      "status" : "passed",
+      "time" : {
+        "start" : 1646039150512,
+        "stop" : 1646039150591,
+        "duration" : 79
+      }
+    }, {
+      "uid" : "c358e7ae464ed309",
+      "status" : "passed",
+      "time" : {
+        "start" : 1646039095304,
+        "stop" : 1646039095383,
+        "duration" : 79
+      }
+    }, {
+      "uid" : "cc0ac20e7b7c75a1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1646038860588,
+        "stop" : 1646038860670,
+        "duration" : 82
+      }
+    }, {
+      "uid" : "23654dd011c8921a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1646038255021,
+        "stop" : 1646038255104,
+        "duration" : 83
+      }
+    }, {
+      "uid" : "6bff9901d638743c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1646038221761,
+        "stop" : 1646038221840,
+        "duration" : 79
+      }
+    }, {
+      "uid" : "4acbac24697062ef",
+      "status" : "passed",
+      "time" : {
+        "start" : 1646038000981,
+        "stop" : 1646038001058,
+        "duration" : 77
+      }
+    }, {
+      "uid" : "f9e30f53e139437",
+      "status" : "passed",
+      "time" : {
+        "start" : 1646037950854,
+        "stop" : 1646037950935,
+        "duration" : 81
+      }
+    }, {
+      "uid" : "fab7cc6b85c07a30",
+      "status" : "passed",
+      "time" : {
+        "start" : 1646037765381,
+        "stop" : 1646037765458,
+        "duration" : 77
+      }
+    }, {
+      "uid" : "6fcd9fd8ecf4299c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1645708226661,
+        "stop" : 1645708226747,
+        "duration" : 86
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a92e600a96c5a758.json",
+  "parameterValues" : [ "<comms.excel_utils.CaseData object at 0x04102BE0>" ]
+}

@@ -1,0 +1,114 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert {'code': 1007...: '用户名或者密码错误'} == {'code': 1000...ZjQ2YjEzZWM='}\n  Differing items:\n  {'code': 1007} != {'code': 1000}\n  {'msg': '用户名或者密码错误'} != {'msg': '登录成功'}\n  Right contains 1 more item:\n  {'token': 'MTY0NjMyMDgyMS4yNjM0NzIzOmJiMWM1NmI2NmU4NzFkNjdjNzU2MTZjMGQxMTI4ZTM1ZjQ2YjEzZWM='}\n  Full diff:\n    {...\n  \n  ...Full output truncated (9 lines hidden), use '-vv' to show",
+      "children" : [ {
+        "name" : "测试用户名是否区分大小写",
+        "uid" : "def3ee323d03c085",
+        "parentUid" : "a0ba90100f03a0f0ba07069c65f0569a",
+        "status" : "failed",
+        "time" : {
+          "start" : 1646290821257,
+          "stop" : 1646290821345,
+          "duration" : 88
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "<comms.excel_utils.CaseData object at 0x03E3EB68>" ]
+      } ],
+      "uid" : "a0ba90100f03a0f0ba07069c65f0569a"
+    }, {
+      "name" : "AssertionError: assert {'code': 1007...: '用户名或者密码错误'} == {'code': 1000...MWZhM2Y5NDRh'}\n  Differing items:\n  {'code': 1007} != {'code': 1000}\n  {'msg': '用户名或者密码错误'} != {'msg': '登录成功'}\n  Right contains 1 more item:\n  {'token': 'MTY0NjMyMDgyMS41NzQ2NDo0NzQwYjUyNWUwNWRmNjNjMzU5OTgyY2E1NGY3ZThhMWZhM2Y5NDRh'}\n  Full diff:\n    {...\n  \n  ...Full output truncated (9 lines hidden), use '-vv' to show",
+      "children" : [ {
+        "name" : "测试密码是否区分大小写",
+        "uid" : "b9d2f081d32b04fc",
+        "parentUid" : "06eb4b5f775fd713599425844ec540c7",
+        "status" : "failed",
+        "time" : {
+          "start" : 1646290821568,
+          "stop" : 1646290821653,
+          "duration" : 85
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "<comms.excel_utils.CaseData object at 0x03E3EC88>" ]
+      } ],
+      "uid" : "06eb4b5f775fd713599425844ec540c7"
+    }, {
+      "name" : "AssertionError: assert {'code': 1003...': '确认密码不能为空'} == {'code': 1004...: '两次密码输入不一致'}\n  Differing items:\n  {'code': 1003} != {'code': 1004}\n  {'msg': '确认密码不能为空'} != {'msg': '两次密码输入不一致'}\n  Full diff:\n  - {'code': 1004, 'msg': '两次密码输入不一致'}\n  ?             ^          ^^  -- ^^\n  + {'code': 1003, 'msg': '确认密码不能为空'}...\n  \n  ...Full output truncated (2 lines hidden), use '-vv' to show",
+      "children" : [ {
+        "name" : "确认密码为空",
+        "uid" : "62507e8cc38fa9a9",
+        "parentUid" : "faa2ccfd4cd178f711bb100d0e88d050",
+        "status" : "failed",
+        "time" : {
+          "start" : 1646290822806,
+          "stop" : 1646290822891,
+          "duration" : 85
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "<comms.excel_utils.CaseData object at 0x040AA670>" ]
+      } ],
+      "uid" : "faa2ccfd4cd178f711bb100d0e88d050"
+    }, {
+      "name" : "AssertionError: assert {'code': 1007...: '手机号码格式不正确'} == {'code': 1009...sg': '用户名已存在'}\n  Differing items:\n  {'code': 1007} != {'code': 1009}\n  {'msg': '手机号码格式不正确'} != {'msg': '用户名已存在'}\n  Full diff:\n  - {'code': 1009, 'msg': '用户名已存在'}\n  + {'code': 1007, 'msg': '手机号码格式不正确'}",
+      "children" : [ {
+        "name" : "手机号码格式不正确",
+        "uid" : "aea789af2bb45e66",
+        "parentUid" : "773d98b6791c860adfee1232c4da8aa7",
+        "status" : "failed",
+        "time" : {
+          "start" : 1646290823147,
+          "stop" : 1646290823231,
+          "duration" : 84
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "<comms.excel_utils.CaseData object at 0x040AA598>" ]
+      } ],
+      "uid" : "773d98b6791c860adfee1232c4da8aa7"
+    }, {
+      "name" : "AssertionError: assert {'code': 1009...g': '邮箱格式不正确'} == {'code': 1009...sg': '用户名已存在'}\n  Omitting 1 identical items, use -vv to show\n  Differing items:\n  {'msg': '邮箱格式不正确'} != {'msg': '用户名已存在'}\n  Full diff:\n  - {'code': 1009, 'msg': '用户名已存在'}\n  ?                        ^^^^^^\n  + {'code': 1009, 'msg': '邮箱格式不正确'}...\n  \n  ...Full output truncated (2 lines hidden), use '-vv' to show",
+      "children" : [ {
+        "name" : "邮箱格式不正确",
+        "uid" : "6b8abca5dd6b7465",
+        "parentUid" : "63b58fabb9dfc1c178920e57cd40189f",
+        "status" : "failed",
+        "time" : {
+          "start" : 1646290823423,
+          "stop" : 1646290823517,
+          "duration" : 94
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "<comms.excel_utils.CaseData object at 0x040AA568>" ]
+      } ],
+      "uid" : "63b58fabb9dfc1c178920e57cd40189f"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

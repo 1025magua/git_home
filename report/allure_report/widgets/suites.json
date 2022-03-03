@@ -1,0 +1,26 @@
+{
+  "total" : 2,
+  "items" : [ {
+    "uid" : "f1c14c7b8b849a189c2670e06eccfb62",
+    "name" : "testcases.test_my_interface01",
+    "statistic" : {
+      "failed" : 3,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 14,
+      "unknown" : 0,
+      "total" : 17
+    }
+  }, {
+    "uid" : "c9fc6a80fea1a4f158084a72301aa8df",
+    "name" : "testcases.test_business_token_login02",
+    "statistic" : {
+      "failed" : 2,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 9,
+      "unknown" : 0,
+      "total" : 11
+    }
+  } ]
+}

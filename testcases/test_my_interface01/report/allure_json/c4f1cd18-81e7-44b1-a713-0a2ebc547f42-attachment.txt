@@ -1,0 +1,24 @@
+ERROR    logging:test_regist.py:42 测试编号11,测试用例标题:邮箱格式不正确,执行失败,实际结果为:{'code': 1009, 'msg': '用户名已存在'}!
+ERROR    logging:test_regist.py:43 assert {'code': 1009...g': '邮箱格式不正确'} == {'code': 1009...sg': '用户名已存在'}
+  Omitting 1 identical items, use -vv to show
+  Differing items:
+  {'msg': '邮箱格式不正确'} != {'msg': '用户名已存在'}
+  Full diff:
+  - {'code': 1009, 'msg': '用户名已存在'}
+  ?                        ^^^^^^
+  + {'code': 1009, 'msg': '邮箱格式不正确'}...
+  
+  ...Full output truncated (2 lines hidden), use '-vv' to show
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\PythonWorkSpace\autotest03\testcases\test_my_interface01\test_regist.py", line 39, in test_register
+    assert eval(case.expect) == res_body
+AssertionError: assert {'code': 1009...g': '邮箱格式不正确'} == {'code': 1009...sg': '用户名已存在'}
+  Omitting 1 identical items, use -vv to show
+  Differing items:
+  {'msg': '邮箱格式不正确'} != {'msg': '用户名已存在'}
+  Full diff:
+  - {'code': 1009, 'msg': '用户名已存在'}
+  ?                        ^^^^^^
+  + {'code': 1009, 'msg': '邮箱格式不正确'}...
+  
+  ...Full output truncated (2 lines hidden), use '-vv' to show

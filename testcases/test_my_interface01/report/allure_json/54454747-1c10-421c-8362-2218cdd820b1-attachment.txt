@@ -1,0 +1,1 @@
+INFO     logging:test_regist.py:51 测试编号5,测试用例标题:邮箱为空,执行成功!

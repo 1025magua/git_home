@@ -1,0 +1,18 @@
+ERROR    logging:test_regist.py:42 测试编号8,测试用例标题:手机号码格式不正确,执行失败,实际结果为:{'code': 1009, 'msg': '用户名已存在'}!
+ERROR    logging:test_regist.py:43 assert {'code': 1007...: '手机号码格式不正确'} == {'code': 1009...sg': '用户名已存在'}
+  Differing items:
+  {'code': 1007} != {'code': 1009}
+  {'msg': '手机号码格式不正确'} != {'msg': '用户名已存在'}
+  Full diff:
+  - {'code': 1009, 'msg': '用户名已存在'}
+  + {'code': 1007, 'msg': '手机号码格式不正确'}
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\PythonWorkSpace\autotest03\testcases\test_my_interface01\test_regist.py", line 39, in test_register
+    assert eval(case.expect) == res_body
+AssertionError: assert {'code': 1007...: '手机号码格式不正确'} == {'code': 1009...sg': '用户名已存在'}
+  Differing items:
+  {'code': 1007} != {'code': 1009}
+  {'msg': '手机号码格式不正确'} != {'msg': '用户名已存在'}
+  Full diff:
+  - {'code': 1009, 'msg': '用户名已存在'}
+  + {'code': 1007, 'msg': '手机号码格式不正确'}

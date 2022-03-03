@@ -1,0 +1,1 @@
+INFO     logging:test_regist.py:51 测试编号10,测试用例标题:密码不在6-18位之间,执行成功!

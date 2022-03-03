@@ -1,0 +1,98 @@
+{
+  "uid" : "b10304bb611244bb",
+  "name" : "密码为空",
+  "fullName" : "test_login.TestLogin#test_login",
+  "historyId" : "0a5850f360156f3c5d6052f500c596eb",
+  "time" : {
+    "start" : 1646039781978,
+    "stop" : 1646039782056,
+    "duration" : 78
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "53e7dba6de24257e",
+      "name" : "接口路径",
+      "source" : "53e7dba6de24257e.attach",
+      "type" : "text/plain",
+      "size" : 32
+    }, {
+      "uid" : "6f1bbae976a379ef",
+      "name" : "请求参数",
+      "source" : "6f1bbae976a379ef.attach",
+      "type" : "text/plain",
+      "size" : 39
+    }, {
+      "uid" : "31e7653418ff1b3b",
+      "name" : "响应结果",
+      "source" : "31e7653418ff1b3b.attach",
+      "type" : "text/plain",
+      "size" : 43
+    }, {
+      "uid" : "8a4079eac9e2c405",
+      "name" : "log",
+      "source" : "8a4079eac9e2c405.txt",
+      "type" : "text/plain",
+      "size" : 95
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "feature",
+    "value" : "登录接口测试"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLogin"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-V37VTV5"
+  }, {
+    "name" : "thread",
+    "value" : "64444-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "<comms.excel_utils.CaseData object at 0x03E7E250>"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b10304bb611244bb.json",
+  "parameterValues" : [ "<comms.excel_utils.CaseData object at 0x03E7E250>" ]
+}
